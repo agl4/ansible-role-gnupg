@@ -25,4 +25,4 @@
     - target: "{{ __gnupg_directory }}/gpg-agent.conf"
       config: "{{ gnupg_gpg_agent_conf }}"
     - target: "{{ __gnupg_directory }}/scdaemon.conf"
-      config: "{{ gnupg_gpg_scdaemon_conf }}"
+      config: "{{ gnupg_scdaemon_conf }}"
