@@ -1,4 +1,4 @@
 ---
-# vars file for ansible-role-desktop-git
 __gnupg_packages:
-  - emacs27
+  - gnupg
+  - pcsc-lite
