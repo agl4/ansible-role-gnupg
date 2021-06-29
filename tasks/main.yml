@@ -1,4 +1,7 @@
 ---
+- name: os-specific variables
+  include_tasks: variables.yml
+
 - name: install
   package:
     name: "{{ gnupg_packages }}"
