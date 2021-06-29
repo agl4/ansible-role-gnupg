@@ -1,0 +1,3 @@
+---
+__gnupg_directory: "{{ ansible_user_dir }}/.gnupg"
+__gnupg_create_backup: true

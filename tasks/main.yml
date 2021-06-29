@@ -1,0 +1,25 @@
+---
+- name: install
+  package:
+    name: "{{ gnupg_packages }}"
+  become: >-
+    {% if ansible_os_family == 'Darwin' %}no{% else %}yes{% endif %}
+
+- name: create gnupg directory
+  file:
+    path: "{{ __gnupg_directory }}"
+    state: directory
+    mode: "0700"
+
+- name: template configuration
+  template:
+    src: templates/gpg.j2
+    dest: "{{ item.target }}"
+    backup: "{{ __gnupg_create_backup }}"
+  with_items:
+    - target: "{{ __gnupg_directory }}/gpg.conf"
+      config: "{{ gnupg_gpg_conf }}"
+    - target: "{{ __gnupg_directory }}/gpg-agent.conf"
+      config: "{{ gnupg_gpg_agent_conf }}"
+    - target: "{{ __gnupg_directory }}/scdaemon.conf"
+      config: "{{ gnupg_gpg_scdaemon_conf }}"

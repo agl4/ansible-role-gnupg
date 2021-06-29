@@ -1,0 +1,4 @@
+---
+__gnupg_packages:
+  - gnupg2
+  - pcsc-lite
