@@ -19,6 +19,7 @@
     src: templates/gpg.j2
     dest: "{{ item.target }}"
     backup: "{{ __gnupg_create_backup }}"
+    mode: "0644"
   with_items:
     - target: "{{ __gnupg_directory }}/gpg.conf"
       config: "{{ gnupg_gpg_conf }}"
