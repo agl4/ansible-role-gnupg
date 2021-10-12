@@ -19,11 +19,11 @@ The following variables can be used to configure GnuPG. They are coming with a s
 Configures `~/.gnupg/gpg.conf`. All configuration option goes line-by-line into the config file.
 
 ``` yaml
-gnupg_gpg_conf: |
-  cert-digest-algo SHA512
-  charset utf-8
-  default-preference-list SHA512 SHA384 SHA256 AES256 AES192 AES ZLIB BZIP2 ZIP Uncompressed
-  fixed-list-mode
+  gnupg_gpg_conf: |
+    cert-digest-algo SHA512
+    charset utf-8
+    default-preference-list SHA512 SHA384 SHA256 AES256 AES192 AES ZLIB BZIP2 ZIP Uncompressed
+    fixed-list-mode
 ```
 
 ### `gnupg_gpg_agent_conf`
@@ -31,9 +31,9 @@ gnupg_gpg_conf: |
 Configures `~/.gnupg/gpg-agent.conf`.
 
 ``` yaml
-gnupg_gpg_agent_conf: |
-  default-cache-ttl 10
-  max-cache-ttl 10
+  gnupg_gpg_agent_conf: |
+    default-cache-ttl 10
+    max-cache-ttl 10
 ```
 
 ### `gnupg_scdaemon_conf`
@@ -41,8 +41,8 @@ gnupg_gpg_agent_conf: |
 Configures `~/.gnupg/scdaemon.conf`.
 
 ``` yaml
-gnupg_scdaemon_conf: |
-  card-timeout 30
+  gnupg_scdaemon_conf: |
+    card-timeout 30
 ```
 
 ## Dependencies
@@ -51,10 +51,12 @@ None.
 
 ## Example Playbook
 
-    - hosts: localhost
-      vars:
-      roles:
-         - agoloncser.gnupg
+``` yaml
+  - hosts: localhost
+    vars:
+    roles:
+       - agoloncser.gnupg
+```
 
 ## License
 
