@@ -26,4 +26,3 @@ gnupg_gpg_agent_conf: |
 gnupg_scdaemon_conf: |
   card-timeout 30
   disable-ccid
-
