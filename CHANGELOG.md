@@ -1,5 +1,16 @@
 # Changelog
 
+## [3.0.0](https://www.github.com/agoloncser/ansible-role-gnupg/compare/v2.0.0...v3.0.0) (2022-04-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* Do not try to install gnupg
+
+### Features
+
+* Do not try to install gnupg ([3741e68](https://www.github.com/agoloncser/ansible-role-gnupg/commit/3741e68211839d7b819a1d3f852c8a354881c678))
+
 ## [2.0.0](https://www.github.com/agoloncser/ansible-role-gnupg/compare/v1.0.2...v2.0.0) (2021-10-12)
 
 
