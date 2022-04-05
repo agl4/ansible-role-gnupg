@@ -2,8 +2,10 @@
 
 [![Molecule testing](https://github.com/agoloncser/ansible-role-gnupg/actions/workflows/ci.yml/badge.svg)](https://github.com/agoloncser/ansible-role-gnupg/actions/workflows/ci.yml)
 
-Ansible role to install and configure GnuPG. Intended to use on
-`localhost` for the current user.
+Ansible role to configure GnuPG. Intended to use on `localhost` for
+the current user.
+
+Note that the role does not take care of installing `gpg` itself.
 
 ## Requirements
 

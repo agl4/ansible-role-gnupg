@@ -1,13 +1,4 @@
 ---
-- name: os-specific variables
-  include_tasks: variables.yml
-
-- name: install
-  package:
-    name: "{{ gnupg_packages }}"
-  become: >-
-    {% if ansible_os_family == 'Darwin' %}no{% else %}yes{% endif %}
-
 - name: create gnupg directory
   file:
     path: "{{ __gnupg_directory }}"
