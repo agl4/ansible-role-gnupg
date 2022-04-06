@@ -1,12 +1,12 @@
 ---
 - name: create gnupg directory
-  file:
+  ansible.builtin.file:
     path: "{{ __gnupg_directory }}"
     state: directory
     mode: "0700"
 
 - name: template configuration
-  template:
+  ansible.builtin.template:
     src: templates/gpg.j2
     dest: "{{ item.target }}"
     backup: "{{ __gnupg_create_backup }}"
