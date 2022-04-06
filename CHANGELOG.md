@@ -1,5 +1,16 @@
 # Changelog
 
+## [4.0.0](https://www.github.com/agoloncser/ansible-role-gnupg/compare/v3.0.0...v4.0.0) (2022-04-06)
+
+
+### ⚠ BREAKING CHANGES
+
+* FQCN builtins
+
+### Features
+
+* FQCN builtins ([9246f9c](https://www.github.com/agoloncser/ansible-role-gnupg/commit/9246f9cd5245dde5e9652e2c8aa076f0840b5e21))
+
 ## [3.0.0](https://www.github.com/agoloncser/ansible-role-gnupg/compare/v2.0.0...v3.0.0) (2022-04-05)
 
 
