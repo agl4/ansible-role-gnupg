@@ -1,6 +1,6 @@
 # Desktop gnupg role
 
-[![Molecule testing](https://github.com/agoloncser/ansible-role-gnupg/actions/workflows/ci.yml/badge.svg)](https://github.com/agoloncser/ansible-role-gnupg/actions/workflows/ci.yml)
+[![Molecule testing](https://github.com/agl4/ansible-role-gnupg/actions/workflows/ci.yml/badge.svg)](https://github.com/agl4/ansible-role-gnupg/actions/workflows/ci.yml)
 
 Ansible role to configure GnuPG. Intended to use on `localhost` for
 the current user.
@@ -58,7 +58,7 @@ None.
   - hosts: localhost
     vars:
     roles:
-       - agoloncser.gnupg
+       - agl4.gnupg
 ```
 
 ## License
@@ -67,4 +67,4 @@ BSD
 
 ## Author Information
 
-[@agoloncser](https://github.com/agoloncser)
+[@agl4](https://github.com/agl4)
