@@ -1,5 +1,16 @@
 # Changelog
 
+## [5.0.0](https://github.com/agl4/ansible-role-gnupg/compare/v4.0.0...v5.0.0) (2024-02-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* Change username
+
+### Features
+
+* Change username ([42dba42](https://github.com/agl4/ansible-role-gnupg/commit/42dba42946c1693028355974ff280a193fdf5ce1))
+
 ## [4.0.0](https://github.com/agl4/ansible-role-gnupg/compare/v3.0.0...v4.0.0) (2022-04-06)
 
 
